@@ -1,0 +1,568 @@
+body {
+    /* font-family: 'DM Serif Display', serif; */
+    font-family: 'Roboto', sans-serif;
+}
+.site-header{
+
+    height: 131px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+
+}
+.logo {
+height: 97px;
+width: 181px;
+}
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 89px;
+   
+     
+}
+.menu ul li{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+    
+     
+}
+.v-center{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.menu {
+
+}
+.icon {
+    width: 24px;
+    height: 24px;
+}
+a {
+    text-decoration: none;
+    color: #000000;
+}
+.phoneIcon {
+    margin-right: 16px;
+}
+.loginIcon {
+    margin-right: 11px;
+    margin-left: 30px;
+}
+.sect1 {
+    height: 874px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;
+    }
+.text1 {
+    height: 108,04px;
+    width: 755px;
+}
+.text1 h1 {
+    font-weight: 400;
+    line-height: 126.15px;
+}
+
+.subtitle {
+    color: #FFFFFF;
+    font-size: 26px;
+    line-height: 42px;
+
+}
+.knopkaPlay {
+    position: relative;
+    height: 214px;
+    width: 214px;
+}
+h1 {
+    font-family: 'DM Serif Display', serif; 
+    color: #FFFFFF;
+    font-size: 92px;
+}
+.play {
+    position: absolute;
+    top:66px;
+    left: 80px;
+}
+.sect2 {
+    height:865px;
+    background: #E5E5E5;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.imgBuild {
+    height: 683px;
+    width: 741px;
+    background-color: #FA9B24;
+    position: relative;
+}
+.sect2H1 {
+    color: #000000;
+    font-size: 50px;
+}
+.sect2Subtitle {
+   font-size: 16px;
+line-height: 32px;
+letter-spacing: 0em;
+margin-bottom: 45px;
+width:621px;
+
+}
+.imgBuild1{
+    position: absolute;
+    top: 67.21px;
+}
+.sect2Text {
+    width: 50%;
+   
+}
+.sect3H1{
+    color: #000000;
+    font-size: 50px; 
+    padding-top: 91px;
+    margin: 0;
+    padding-bottom: 44px;
+}
+.sect3 {
+    height: 1558px;
+    text-align: center;
+    background-color: #FBF9F7;
+    padding-bottom: 97px;
+}
+
+.bloki {
+    Width: 363px;
+    Height: 523px;
+    text-align: left;
+    margin-bottom:52px;
+
+}
+.bloki h1 {
+    color: black;
+    font-size: 20px;
+    margin-top:25px;
+    margin-bottom:10px;
+
+}
+.bloki .price {
+    font-size: 30px;
+    text-align:center;
+    margin:0;   
+    font-family: 'DM Serif Display', serif;
+
+}
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    gap: 29px;
+}
+.viewAll {
+   margin-top: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.columnWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.grayText {
+    color: #565656;
+    font-size: 14px;
+    margin-top:0;
+    margin-bottom:4px;
+
+}
+.blackBoldText {
+    color:#0F0F0F;
+    margin-top:0;
+    margin-bottom:20px;
+    font-family: 'DM Serif Display', serif;
+   
+
+font-size: 20px;
+}
+.button {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 48px;
+    padding-right: 48px;
+    border-radius: 63px;
+    background-color: #FA9B24;
+    color: #E5E5E5;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    border: 0;
+
+}
+.sect4 {
+    height: 1389px;
+    text-align: center;
+}
+.sect4 p.sect2Subtitle {
+    width: 1009px;
+    margin: auto;
+    padding-bottom: 56px;
+}
+.wrapperOurPortfolio {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    gap: 32px;
+}
+.blokiOurPortfolio h1 {
+    font-size:30px;
+    color: #0F0F0F;
+}
+.blokiOurPortfolio {
+    background-color: #FBF9F7;
+    border: 1px solid rgba(163, 163, 163, 0.21);
+}
+.sect5 {
+    height: 1243px;
+    background: #FBF9F7;
+    
+}
+.whySps {
+    height: 1054px;
+    
+    justify-content: center;
+    display: flex;
+    
+   
+    
+}
+.imgWhySps {
+    Width: 1278px;
+    Height: 516px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.sect5 h1 {
+    text-align: center;
+
+
+}
+.columnWhy h1 {
+    font-size:30px;
+    color: #0F0F0F;
+    text-align: left;
+    
+}
+
+.columnWhy p.sect2Subtitle {
+    width: 363px;
+}
+.columnWrapperWhy {
+    display: flex;
+    justify-content: space-between;
+
+}
+.sect6 {
+    Height:696px;
+    background: #1F1F1F;
+
+}
+.sect6 h1 {
+    color: #FFFFFF;
+    text-align: center;
+
+}
+.wrapperReviews {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    gap: 27px;
+}
+.blokiReviews {
+    background-color: #464645;
+    padding-left: 50px;
+    padding-right: 51px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    position: relative;
+    
+    
+}
+.avatarH1 {
+    display: flex;
+    
+    align-items: center;
+    gap: 40px;
+}
+.h1Avatar h1 {
+    font-size: 30px;
+}
+
+
+.revievText p {
+    color: #FFFFFF;
+    line-height: 32px;
+    width: 394px;
+    margin: 0;
+    position: relative;
+    
+}
+.skobki1 p, .skobki2 p {
+    font-size: 252.2px;
+    color: #50504E;
+   margin: 0;
+    font-family: 'DM Serif Display', serif;
+    
+
+}
+.skobki1 {
+    top: 27px;
+    left: 32px;
+    position: absolute;
+
+}
+.skobki2 {
+bottom: 0;
+right: 19px;
+    transform: rotate(-180deg);
+    position: absolute;
+}
+
+.sect7 {
+    Height:789px;
+    background: #E5E5E5;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.imgLesnicaDiv {
+    width: 741px;
+    height: 683px;
+    background-color: #FA9B24;
+    position: relative;
+}
+.sect7Text {
+    width: 50%;
+}
+.imgLesnica {
+position: absolute;
+bottom: 66px;
+}
+.knopkiSekt7 {
+    display: flex;
+    gap: 34px;
+}
+.sect7 h1.sect2H1{
+    width: 621px;
+    margin: inherit;
+}
+.StayConnected {
+    Height: 873px;
+    background:  #FBF9F7;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+}
+.stayH {
+    font-size: 30px;
+    color: #0F0F0F;
+    
+}
+.socialNetwork {
+    display: flex;
+    gap: 16px;
+}
+.Facebook {
+    background: #FA9B24;
+    border-radius: 50px;
+    Width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.subscribe {
+    width: 180px;
+    position: absolute;
+}
+.activeCampaign {
+   
+    position: relative;
+}
+.activeCampaign .button {
+    position: absolute;
+    right: 0px;
+
+}
+.activeCampaignGrey {
+    width: 80%;
+    padding-top: 27px;
+    padding-bottom: 33px;
+    border-radius: 63px 0px 0px 63px;
+    border: 0;
+    background-color: #EAEAEA;
+    font-size: 16px;
+    position: relative;
+    padding-left: 46px;
+
+    
+}
+.texstStay .activeCampaign {
+    width: 538px;
+}
+::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*.texstStay p.sect2Subtitle {
+    width: 
+}
+*/
+
+.imgTrio {
+    Width:486px;
+    Height:538px;
+    background-color: #FA9B24;
+    margin-right: 255PX;
+    position: relative;
+
+}
+.trio1{
+    position: absolute;
+    top: 45px;
+    right: 167px;
+}
+.trio2{
+    position: absolute;
+    bottom: 310px;
+    left: 349px;
+}
+.trio3 {
+    position: absolute;
+    top: 265px;
+    left: 349px;
+}
+
+.ready {
+    height: 610px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.imgReadyDiv {
+    Width: 553px;
+    Height: 494px;
+    background-color: #FA9B24;
+    position: relative;
+    margin-top: 116px;
+}
+.imgReady {
+    position: absolute;
+    bottom: 0;
+    left: 35px
+   
+}
+.SubscribeNewsletter {
+    height: 479px;
+    background: #1F1F1F;
+    
+}
+.SubscribeNewsletter h1 {
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 74px;
+
+}
+.knopkaNews {
+    width: 755px;
+    margin: auto;
+    margin-bottom: 64px;
+}
+.knopkaNews .activeCampaignGrey {
+    
+    background-color: rgba(234, 234, 234, 0.46);
+}
+
+.knopkaNews ::placeholder {
+    color: #FFFFFF;
+}
+
+
+.columnWrapperContact {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.stroka1{
+    display: flex;
+   vertical-align: middle;
+
+}
+.drugaya {
+    align-items: center;
+}
+.stroka1 p {
+    color: #FFFFFF;
+   
+}
+.line {
+    line-height: 48px;
+}
+
+.ikonka {
+    width: 24px;
+    height: 24px;
+    margin-right: 14px;
+   
+}
+.line .ikonka{
+    padding-top: 28px;
+}
+.footerSite {
+    height: 157px;
+    background-color: #FA9B24;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menuFooter ul {
+   
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 89px;
+}
+.menuFooter a {
+    color: #FFFFFF;
+}
+
+.menuFooter {
+    display: flex;
+    align-items: center;
+}
+
+.logoFoter {
+    display: flex;
+align-items: center;
+}
