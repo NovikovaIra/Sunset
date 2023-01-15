@@ -11,8 +11,9 @@ body {
     font-size: 16px;
 
 }
+
 .logo {
-height: 97px;
+
 width: 181px;
 }
 .menu ul {
@@ -84,6 +85,51 @@ a {
     height: 214px;
     width: 214px;
 }
+.img_video {
+	cursor: pointer;
+	cursor: hand; /* Для старых браузеров */
+}
+.modal_form {
+	width: 700px; 
+	height: 550px; /* Рaзмеры дoлжны быть фиксирoвaны */
+	position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */
+	top: 45%; /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */
+	left: 50%; /* пoлoвинa экрaнa слевa */
+	margin-top: -275px;
+	margin-left: -350px; /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+	display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+	opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+	z-index: 9999; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+	padding: 20px 10px;
+}
+
+/* Пoдлoжкa */
+.overlay {
+	z-index:9998; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+	position:fixed; /* всегдa перекрывaет весь сaйт */
+	background-color:#000; /* чернaя */
+	opacity:0.98; /* нo немнoгo прoзрaчнa */
+	-moz-opacity:0.98; /* фикс прозрачности для старых браузеров */
+	filter:alpha(opacity=80);
+	width:100%; 
+	height:100%; /* рaзмерoм вo весь экрaн */
+	top:0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+	left:0;
+	cursor:pointer;
+	display:none; /* в oбычнoм сoстoянии её нет) */
+}
+
+/* Кнoпкa зaкрыть */
+.modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 26px;
+	cursor: pointer;
+	display: block;
+	color:white;
+}
 h1 {
     font-family: 'DM Serif Display', serif; 
     color: #FFFFFF;
@@ -135,7 +181,7 @@ width:621px;
     padding-bottom: 44px;
 }
 .sect3 {
-    height: 1558px;
+    
     text-align: center;
     background-color: #FBF9F7;
     padding-bottom: 97px;
@@ -211,7 +257,7 @@ font-size: 20px;
 
 }
 .sect4 {
-    height: 1389px;
+    
     text-align: center;
 }
 .sect4 p.sect2Subtitle {
@@ -225,7 +271,9 @@ font-size: 20px;
     align-content: space-between;
     justify-content: center;
     gap: 32px;
+    padding-bottom: 109px;
 }
+
 .blokiOurPortfolio h1 {
     font-size:30px;
     color: #0F0F0F;
@@ -279,6 +327,7 @@ font-size: 20px;
 .sect6 {
     Height:696px;
     background: #1F1F1F;
+    position: relative;
 
 }
 .sect6 h1 {
@@ -286,28 +335,46 @@ font-size: 20px;
     text-align: center;
 
 }
-.wrapperReviews {
+.reviews {
+    width: 90%;
+}
+.swiper-button-next, .swiper-button-prev {
+    color: #FA9B24;
+    top: 55%;
+    width: 11.5px;
+    height: 23px;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 20px;
+}
+.swiper-button-next, .swiper-rtl .swiper-button-prev {
+    right: 20px;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+    left: 20px;
+}
+/* .wrapperReviews {
     display: flex;
-    flex-wrap: wrap;
     align-content: space-between;
     justify-content: center;
     gap: 27px;
-}
+    padding: 0 100px;
+} */
 .blokiReviews {
     background-color: #464645;
-    padding-left: 50px;
-    padding-right: 51px;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    
     position: relative;
+    
     
     
 }
 .avatarH1 {
     display: flex;
-    
     align-items: center;
     gap: 40px;
+    padding-top: 21px;
+    padding-left: 52px;
+    padding-bottom: 10px;
 }
 .h1Avatar h1 {
     font-size: 30px;
@@ -320,6 +387,8 @@ font-size: 20px;
     width: 394px;
     margin: 0;
     position: relative;
+    padding-left: 40px;
+    padding-bottom: 31px;
     
 }
 .skobki1 p, .skobki2 p {
@@ -565,4 +634,417 @@ bottom: 66px;
 .logoFoter {
     display: flex;
 align-items: center;
+}
+
+.slick-prev {
+    left: 50px;
+}
+.slick-prev:before {
+    content: url('../img/Vector 4.png');
+}
+.slick-next {
+    right: 50px;
+}
+.slick-next:before {
+    content: url('../img/Vector 5.png');
+}
+
+@media (max-width: 480px) {
+    .site-header {
+        align-items: center;
+    }
+    .menu-btn {
+        height: 30px;
+    }
+    .logo {
+        padding: 3px;
+        margin: 8px;
+        width: 145px;
+    }
+    
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .phoneIcon {
+        margin-right: 5px;
+    }
+    .loginIcon {
+        margin-left: 15px;
+    }
+    h1 {
+        font-size: 31px;
+    }
+    .sect1 {
+        display: block;
+        height: 100%;
+        text-align: center;
+        padding-bottom: 1em;
+    }
+    .knopkaPlay {
+        margin: auto;
+    }
+    .text1 {
+        width: 100%;
+        padding: 1px;
+    }
+    .text1 h1 {
+        line-height: normal;
+    }
+    .imgBuild {
+        display: none;
+    }
+    .sect2H1 {
+        font-size: 31px;
+    }
+    .sect2{
+        height: 100%;
+        padding-bottom: 53px;
+    }
+    .sect2Subtitle {
+        width: 100%;
+    }
+    .sect2Text {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+    .sect3H1 {
+        font-size: 31px;
+        padding-top: 35px;
+    }
+    .bloki h1 {
+        text-align: center;
+    }
+    .sect3 {
+        height: 100%;
+        padding-bottom: 50px;
+    }
+    .bloki .price {
+        font-size: 23px;
+    }
+    .viewAll {
+        margin-top: 10px;
+    }
+    .wrapper {
+        gap: 0;
+    }
+    .sect4 p.sect2Subtitle {
+        width: 100%;
+    }
+    .sect4 {
+        height: 100%;
+        padding: 10px;
+    } 
+    .blokiOurPortfolio img {
+        width: 100%;
+    }
+    .blokiOurPortfolio h1 {
+        font-size: 23px;
+    }
+    .imgWhySps {
+        Width: 100%;
+        Height: auto;
+        background-size: cover;
+        margin-bottom: 56px;
+       
+    }
+    .columnWrapperWhy {
+     display: block;
+    }
+    .columnWhy h1 {
+        font-size: 23px;
+        text-align: center;
+    }
+    .columnWhy {
+        text-align: center;
+    }
+    .sect5 {
+        height: 100%;
+    }
+    .sect6 {
+        Height: 100%;
+    }
+    .sect7 {
+        Height: 100%;
+        padding-bottom: 45px;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        display: none;
+    }
+    .revievText p {
+        padding-left: 13px;
+    }
+    .reviews {
+        padding-bottom: 35px;
+    }
+
+    .imgLesnicaDiv {
+        display: none;
+    }
+    .sect7 h1.sect2H1 {
+        width: 100%;
+    }
+    .sect7Text {
+         width: 100%;
+         padding: 10px;
+         text-align: center;
+    }
+    .knopkiSekt7 {
+        display: flex;
+        gap: 75px;
+        flex-direction: column;
+    }
+    .button{
+        font-size: 11px;
+    }
+    .imgTrio {
+        display: none;
+    }
+    .StayConnected {
+        Height: 100%;
+        display: block;
+        padding: 10px;
+        text-align: center;
+        padding-bottom: 35px;
+    }
+    .socialNetwork {
+        display: flex;
+        justify-content: center;
+    }
+    .texstStay .activeCampaign {
+        width: 93%;
+    }
+    .activeCampaignGrey {
+        width: 74%;
+        font-size: 13px;
+        padding-bottom: 30px;
+    }
+    .imgReadyDiv {
+        display: none;
+    }
+    .ready {
+        height: 100%;
+        text-align: center;
+        padding: 10px;
+        padding-bottom: 55px;
+    }
+    .SubscribeNewsletter {
+         height: 100%;
+         padding: 10px;
+         padding-bottom: 20px;
+    }
+    .knopkaNews {
+         width: 100%;
+         margin-bottom: 25px;
+    }
+    .SubscribeNewsletter h1 {
+       padding-top: 0px;
+    }
+    .columnWrapperContact {
+        display: grid;
+    }
+    .line {
+         line-height: normal;
+    }
+    .menuFooter ul {
+        display: flex;
+        gap: 6px;
+        flex-direction: column;
+    }
+    .footerSite {
+        
+        justify-content: center;
+    }
+}
+@media (max-width: 768px) {
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        padding-left: 0px;
+    }
+    .logo {
+        width: 150px;
+        margin: 10px;
+    }
+    .phoneIcon {
+        margin-right: 5px;
+    }
+    .loginIcon {
+        margin-left: 15px;
+    }
+    .site-header {
+        font-size: 20px;
+    }
+    .sect1{
+        display: block;
+        height: 100%;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    h1 {
+        margin: 0;
+        font-size: 60px;
+    }
+    .text1 {
+        width: 100%;
+        }
+    .text1 h1 {
+        line-height: normal;
+        padding-top: 30px;
+    }
+    .knopkaPlay {
+        margin: auto;
+    }
+    .sect2 {
+        height: 100%;
+    }
+    .imgBuild {
+        display: none;
+    }
+   
+    .sect2Subtitle {
+        width: 100%;
+        margin: 45px auto;
+    }
+    .sect2H1 {
+        font-size: 35px;
+        padding-top: 40px;
+    }
+    .sect2Text {
+        padding: 0px 15px 60px 15px;
+        width: 100%;
+        text-align: center;
+    }   
+
+    .viewAll {
+         margin-top: 0;
+    }
+    .sect3H1 {
+        font-size: 35px;
+        padding-top: 40px;
+    }
+    .sect4 p.sect2Subtitle {
+         width: 100%;
+    }
+    .imgLesnicaDiv {
+        display: none;
+    }
+    .imgWhySps {
+        Width: 100%;
+        Height: auto;
+        background-size: cover;
+        margin-bottom: 50px;
+    }
+    .whySps {
+        height: 100%;
+        display: block;
+    }
+    .sect5 {
+        text-align: center;
+    }
+    .columnWhy h1 {
+        text-align: center;
+    }
+    .columnWrapperWhy {
+        display: block;
+    }
+    
+    .sect6 {
+         Height: 100%;
+    }
+    .sect7 h1.sect2H1 {
+        width: 100%;
+    }
+    .sect7Text {
+         width: 100%;
+         padding: 15px;
+    }
+    .sect7 {
+        height: 100%;
+        text-align: center;
+    }
+    .knopkiSekt7 {
+        display: flex;
+        gap: 75px;
+        flex-direction: column;
+        padding-bottom: 70px;
+    }
+    .imgTrio {
+        display: none;
+    }
+    .StayConnected {
+         Height: 100%;
+         text-align: center;
+    }
+    .socialNetwork {
+        justify-content: center;
+    }
+    .texstStay .activeCampaign {
+        width: 93%;
+    }
+    .stayH {
+        margin: 15px;
+    }
+    .activeCampaign {
+        margin-bottom: 40px;
+    }
+    .imgReadyDiv {
+        display: none;
+    }
+    .texstReady {
+        text-align: center;
+ 
+    } 
+    .ready {
+        height: 100%;
+    }
+    
+    .knopkaNews {
+        width: 95%;
+    }
+    .SubscribeNewsletter {
+        height: 100%;
+        padding: 10px;
+    }
+    .SubscribeNewsletter h1 {
+        padding-top: 35px;
+        padding-bottom: 20px;
+    }
+    .footerSite {
+        height: 100%;
+    }
+    .menuFooter ul {
+        flex-direction: column;
+        gap: 17px;
+    }
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+
+    .imgBuild {
+        height: 365px;
+        width: 270px;
+    }
+    .imgBuild1 {
+        height: 320px;
+        width: 315px; 
+        top: 45px;  
+    }
+
+.imgLesnicaDiv {
+    width: 293px;
+    height: 315px;
+}
+.imgLesnica {
+    height: 289px;
+    width: 337px;
+    bottom: 29px;
+}
 }

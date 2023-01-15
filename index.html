@@ -3,29 +3,40 @@
     <head>
         <meta charset="utf-8">
         <title>Sunset</title>
-        <link rel="stylesheet" href="C:\Users\Ира\Desktop\проект\css\style.css">
+        <link rel="stylesheet" href="package/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-menu.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width" />
+        
     </head>
     <body>
         <header class="site-header">
+            <div class="menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div >
-                <img class="logo" src="C:\Users\Ира\Desktop\проект\img\logo.png"> 
+                <img class="logo" src="C:\Users\Ира\Desktop\проект\img\logo.png" id="home"> 
             </div>
             <div class="menu v-center">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Current residents</a></li>
-                    <li><a href="#">Available apartments</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+               <nav> 
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#current">Current residents</a></li>
+                        <li><a href="#available">Available apartments</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#subscribe">Contact</a></li>
+                    </ul>
+             </nav>
             </div>
             <div class="contacts v-center">
                 <img class="icon phoneIcon" src="img/Vector.png">
-                <a href="#">513.321.7000 </a>
+                <a href="tel:513.321.7000">513.321.7000 </a>
                 <img class="icon loginIcon" src="img/log-in.png">
                 <a href="#"> Tenant Login </a>
             </div>
@@ -33,19 +44,21 @@
         <section class="sect1" style="background-image: url('img/shutterstock_1923333533 1.png');">
             <div class="text1"><h1>Redefining The<br>Living Experience</h1>
             <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Blandit elementum eu tortor in pretium ornare vestibulum ac. Nulla ut neque eleifend elementum leo, parturient.</p></div>
-            <div class="knopkaPlay"><img  src="img/Linked Path Group.png">
-            <img class="play" src="img/Polygon 1.png"></div>
+            <div class="knopkaPlay img_video" onclick='show_video("v1");'>   
+                <img  src="img/Linked Path Group.png">
+            <img class="play" src="img/Polygon 1.png">
+            </div>
         </section>
         <section class="sect2">
             <div class="imgBuild"><img src="img/shutterstock_761409520 1.png" class="imgBuild1"></div>
             <div class="sect2Text">
-                <h1 class="sect2H1">About Sunset Property<br>Solutions (SPS)</h1>
+                <h1 class="sect2H1" id="about">About Sunset Property Solutions (SPS)</h1>
                 <p class="sect2Subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra iaculis odio nibh quis lacus. Erat at nunc aenean magna odio aliquam tincidunt odio. Posuere cursus condimentum nunc sit nunc. Imperdiet sed massa lacus, id semper tristique. Non ac aliquam fusce mauris ridiculus quam ipsum pulvinar. Pulvinar adipiscing pellentesque placerat pellentesque in pellentesque elementum. Pharetra porttitor dolor maecenas blandit. Nunc, ipsum mollis risus aliquam tortor. Mauris purus quam eget tellus dignissim suspendisse adipiscing massa. A eu ullamcorper tellus, vel leo. Dui, feugiat mattis hendrerit felis pellentesque rhoncus. In in quisque placerat porttitor. Laoreet enim, eu mi, tellus proin consectetur tellus orci, erat. Arcu dolor, cursus duis mi faucibus sollicitudin viverra.</p>
             <div><a href="#" class="button">ead More About SPS</a></div>
             </div>
         </section>
         <section class="sect3">
-            <h1 class="sect3H1">Featured Available Apartments</h1>
+            <h1 class="sect3H1" id="available">Featured Available Apartments</h1>
             <div class="wrapper">
             <div class="bloki">
                 <div><img src="img/unsplash_2d4lAQAlbDA.png"></div>
@@ -204,7 +217,7 @@
     </div>
         </section>
         <section class="sect4">
-            <h1 class="sect3H1">Our Portfolio</h1>
+            <h1 class="sect3H1" id="portfolio">Our Portfolio</h1>
             <p class="sect2Subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra iaculis odio nibh quis lacus. Erat at nunc aenean magna odio aliquam tincidunt odio. Posuere cursus condimentum nunc sit nunc. Imperdiet sed massa lacus, id semper tristique. Non ac aliquam fusce mauris ridiculus quam ipsum pulvinar. Pulvinar adipiscing pellentesque placerat pellentesque in pellentesque elementum. </p>
             <div class="wrapperOurPortfolio">
                 <div class="blokiOurPortfolio">
@@ -237,7 +250,7 @@
             <h1 class="sect3H1">Why SPS Is Diferent</h1>
             <div class="whySps">
                <div class="whySpsFull"> <div class="imgWhySps" style="background-image: url('img/unsplash_wot0Q5sg91E.png');">
-                    <div class="knopkaPlay">
+                    <div class="knopkaPlay img_video" onclick='show_video("v2");'>
                         <img  src="img/Linked Path Group.png">
                         <img class="play" src="img/Polygon 1.png">
                     </div>
@@ -262,10 +275,10 @@
             
         </section>
         <section class="sect6">
-            <h1 class="sect3H1">What Our Tenants Have to Say</h1>
-            <div class="reviews">
-                <div class="wrapperReviews">
-                    <div class="blokiReviews">
+            <h1 class="sect3H1" id="current">What Our Tenants Have to Say</h1>
+            <div class="reviews swiper">
+                <div class="wrapperReviews swiper-wrapper">
+                    <div class="blokiReviews swiper-slide">
                         <div class="skobki1"><p>“</p></div>
                         <div class="skobki2"><p>“</p></div>
                         <div class="avatarH1">
@@ -275,7 +288,7 @@
                        <div class="revievText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac orci, rhoncus nulla nam at convallis. Dignissim id eu proin fermentum. Turpis volutpat commodo vitae in et. Suscipit quam id adipiscing ante. Ut ultrices enim aenean ipsum, eu, porttitor aliquet blandit id. Mauris nibh turpis elementum, sed tortor odio tristique faucibus donec.</p>
                         </div>
                     </div>
-                    <div class="blokiReviews">
+                    <div class="blokiReviews swiper-slide">
                         <div class="skobki1"><p>“</p></div>
                         <div class="skobki2"><p>“</p></div>
                         <div class="avatarH1">
@@ -285,7 +298,37 @@
                        <div class="revievText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac orci, rhoncus nulla nam at convallis. Dignissim id eu proin fermentum. Turpis volutpat commodo vitae in et. Suscipit quam id adipiscing ante. Ut ultrices enim aenean ipsum, eu, porttitor aliquet blandit id. Mauris nibh turpis elementum, sed tortor odio tristique faucibus donec.</p>
                         </div>
                     </div>
-                    <div class="blokiReviews">
+                    <div class="blokiReviews swiper-slide">
+                        <div class="skobki1"><p>“</p></div>
+                        <div class="skobki2"><p>“</p></div>
+                        <div class="avatarH1">
+                            <div class="avatar"><img src="img/Ellipse 1 (2).png"></div>
+                            <div class="h1Avatar"><h1>Testimonial</h1></div>
+                        </div>
+                       <div class="revievText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac orci, rhoncus nulla nam at convallis. Dignissim id eu proin fermentum. Turpis volutpat commodo vitae in et. Suscipit quam id adipiscing ante. Ut ultrices enim aenean ipsum, eu, porttitor aliquet blandit id. Mauris nibh turpis elementum, sed tortor odio tristique faucibus donec.</p>
+                        </div>
+                    </div>
+                    <div class="blokiReviews swiper-slide">
+                        <div class="skobki1"><p>“</p></div>
+                        <div class="skobki2"><p>“</p></div>
+                        <div class="avatarH1">
+                            <div class="avatar"><img src="img/Ellipse 1 (2).png"></div>
+                            <div class="h1Avatar"><h1>Testimonial</h1></div>
+                        </div>
+                       <div class="revievText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac orci, rhoncus nulla nam at convallis. Dignissim id eu proin fermentum. Turpis volutpat commodo vitae in et. Suscipit quam id adipiscing ante. Ut ultrices enim aenean ipsum, eu, porttitor aliquet blandit id. Mauris nibh turpis elementum, sed tortor odio tristique faucibus donec.</p>
+                        </div>
+                    </div>
+                    <div class="blokiReviews swiper-slide">
+                        <div class="skobki1"><p>“</p></div>
+                        <div class="skobki2"><p>“</p></div>
+                        <div class="avatarH1">
+                            <div class="avatar"><img src="img/Ellipse 1 (2).png"></div>
+                            <div class="h1Avatar"><h1>Testimonial</h1></div>
+                        </div>
+                       <div class="revievText"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac orci, rhoncus nulla nam at convallis. Dignissim id eu proin fermentum. Turpis volutpat commodo vitae in et. Suscipit quam id adipiscing ante. Ut ultrices enim aenean ipsum, eu, porttitor aliquet blandit id. Mauris nibh turpis elementum, sed tortor odio tristique faucibus donec.</p>
+                        </div>
+                    </div>
+                    <div class="blokiReviews swiper-slide">
                         <div class="skobki1"><p>“</p></div>
                         <div class="skobki2"><p>“</p></div>
                         <div class="avatarH1">
@@ -296,7 +339,10 @@
                         </div>
                     </div>
                 </div>
+                
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </section>
         <section class="sect7">
             <div class="imgLesnicaDiv"><img src="img/unsplash_UV81E0oXXWQ.png" class="imgLesnica"></div>
@@ -344,7 +390,7 @@
             </div>
         </section>
         <section class="SubscribeNewsletter">
-            <h1 class="sect2H1">Subscribe to the newsletter</h1>
+            <h1 class="sect2H1" id="subscribe">Subscribe to the newsletter</h1>
             <div class="knopkaNews">
                 <div class="activeCampaign">
                     <input type="text" placeholder="ActiveCampaign Email Signup" class="activeCampaignGrey">
@@ -382,17 +428,98 @@
             </div>
             <div class="menuFooter">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Current residents</a></li>
-                    <li><a href="#">Available apartments</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#current">Current residents</a></li>
+                    <li><a href="#available">Available apartments</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#subscribe">Contact</a></li>
                 </ul>
             </div>
 
 
         </footer>
+        <script>
+            function show_video(type)
+            {
+        
+                $('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
+                    function(){ // пoсле выпoлнения предъидущей aнимaции	
+                        $('#' + type) 
+                        .css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
+                        .animate({opacity: 1, top: '50%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз                 
+                    });
+                
+                
+            /* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
+            $('.modal_close, #overlay').click( function(){ // лoвим клик пo крестику или пoдлoжке
+                        
+                $('.modal_form')  
+                    .animate({opacity: 0, top: '45%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
+            
+                function(){ // пoсле aнимaции
+                    $(this).css('display', 'none'); // делaем ему display: none;
+                    $('#overlay').fadeOut(400); // скрывaем пoдлoжку
+                }); 
+            });
+            }
+        </script>	
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script src="package/swiper-bundle.min.js"></script>
+       
+        
+        <div id="v1" class="modal_form"><!-- Сaмo oкнo --> 
+            <span class="modal_close">x</span> <!-- Кнoпкa зaкрыть --> 
+            <center>
+                <iframe width="650" height="488" src="https://www.youtube.com/embed/DZl0J-eTjz8?enablejsapi=1" frameborder="0" allowfullscreen id='v1'></iframe>
+            </center>
+        </div>
 
+        <div id="v2" class="modal_form" ><!-- Сaмo oкнo --> 
+            <span class="modal_close">x</span> <!-- Кнoпкa зaкрыть --> 
+            <center>
+                <iframe width="650" height="488" src="https://www.youtube.com/embed/jnRcd0QJjn8?enablejsapi=1" frameborder="0" allowfullscreen id='v2'></iframe>
+            </center>
+        </div>
+      <div id="overlay" class="overlay">
+      </div>
+     
+
+     
+     <script>
+       const swiper = new Swiper('.swiper', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop:true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 1,
+            spaceBetween: 0,
+          },
+          1280: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          }
+        }
+});
+    </script>
+       <script>
+        let menuBtn = document.querySelector('.menu-btn');
+        let menu = document.querySelector('.menu');
+            menuBtn.addEventListener('click', function(){
+	        menuBtn.classList.toggle('active');
+	        menu.classList.toggle('active');
+            })
+      </script>
+      
     </body>
 </html>
