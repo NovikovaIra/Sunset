@@ -20,7 +20,7 @@ width: 181px;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    gap: 89px;
+    gap: 3vw;
    
      
 }
@@ -134,6 +134,7 @@ h1 {
     font-family: 'DM Serif Display', serif; 
     color: #FFFFFF;
     font-size: 92px;
+    margin: 0;
 }
 .play {
     position: absolute;
@@ -148,8 +149,8 @@ h1 {
     align-items: center;
 }
 .imgBuild {
-    height: 683px;
-    width: 741px;
+        height: 35vw;
+        width: 35vw;
     background-color: #FA9B24;
     position: relative;
 }
@@ -162,10 +163,12 @@ h1 {
 line-height: 32px;
 letter-spacing: 0em;
 margin-bottom: 45px;
-width:621px;
+max-width:621px;
 
 }
 .imgBuild1{
+    height: 35vw;
+    width: 40vw;
     position: absolute;
     top: 67.21px;
 }
@@ -184,7 +187,7 @@ width:621px;
     
     text-align: center;
     background-color: #FBF9F7;
-    padding-bottom: 97px;
+    padding-bottom: 35px;
 }
 
 .bloki {
@@ -413,15 +416,15 @@ right: 19px;
 }
 
 .sect7 {
-    Height:789px;
     background: #E5E5E5;;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 50px;
 }
 .imgLesnicaDiv {
-    width: 741px;
-    height: 683px;
+    height: 40vw;
+    width: 40vw;
     background-color: #FA9B24;
     position: relative;
 }
@@ -429,8 +432,10 @@ right: 19px;
     width: 50%;
 }
 .imgLesnica {
+    top: 0;
+    width: 45vw;
 position: absolute;
-bottom: 66px;
+
 }
 .knopkiSekt7 {
     display: flex;
@@ -524,31 +529,34 @@ bottom: 66px;
 .trio2{
     position: absolute;
     bottom: 310px;
-    left: 349px;
+    right: -70px;
 }
 .trio3 {
     position: absolute;
     top: 265px;
-    left: 349px;
+    right: -160px;
 }
 
 .ready {
-    height: 610px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding-top: 40px;
 }
 .imgReadyDiv {
-    Width: 553px;
-    Height: 494px;
+    Width: 39vw;
+    Height: 35vw;
     background-color: #FA9B24;
     position: relative;
     margin-top: 116px;
+    display: flex;
+    justify-content: space-around;
 }
 .imgReady {
+    width: 34vw;
     position: absolute;
     bottom: 0;
-    left: 35px
+    
    
 }
 .SubscribeNewsletter {
@@ -1027,24 +1035,129 @@ align-items: center;
 
 
 @media (max-width: 1024px) {
-
+    h1 {
+        font-size: 70px;
+    }
+    .sect1 {
+        height: 100%;
+        padding: 0 10px 40px 20px;
+    }
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        padding-left: 0px;
+    }
+    .site-header {
+        font-size: 25px;
+    }
+    .sect2 {
+        height: 100%;
+        padding-bottom: 65px;
+        padding-top: 30px;
+    }
+    
+    .sect2Subtitle {
+     width: 100%;
+    }
+    .sect2H1 {
+        font-size: 40px;
+    }
+    .sect2Text {
+        padding-right: 50px;
+    }
     .imgBuild {
         height: 365px;
-        width: 270px;
+        width: 283px;
     }
     .imgBuild1 {
         height: 320px;
-        width: 315px; 
+        width: 323px; 
         top: 45px;  
     }
+    .sect3H1 {
+        font-size: 40px;
+    }
+    .sect4 p.sect2Subtitle {
+        width: 100%;
+    }
+    .sect3H1 {
+        padding-top: 45px;
+    }
+    .imgWhySps {
+        width: 100%;
+            margin-bottom: 20px;
+    }
+    .whySps {
+        height: 100%;
+        display: block;
+    }
+    .sect5 {
+        height: 100%;
+    }
+    .columnWrapperWhy {
+            flex-direction: column;
+            align-items: center;
+    }
+    .sect7 h1.sect2H1 {
+        width: 100%;
+    }
+    .sect7Text {
+        margin-right: 30px;
+        padding-top: 30px;
+    }
+    .imgLesnicaDiv {
+        
+        
+    }
+    .imgLesnica {
+       bottom: 27px;
+    }
+    .StayConnected {
+        Height: 100%;
+        text-align: center;
+        padding-bottom: 35px;
+        padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 25px;
+   }
+   .socialNetwork {
+    justify-content: center;
+    }
+    .imgReadyDiv {
+    display: none;
+    }
+    .imgTrio {
+        display: none;
+    }
+    .texstStay .activeCampaign {
+        width: 93%;
+    }
+    .knopkiSekt7 {
+        padding-bottom: 60px;
+        justify-content: center;
 
-.imgLesnicaDiv {
-    width: 293px;
-    height: 315px;
+    }
+    .ready{
+        text-align: center;
+     }
+     .menuFooter ul {
+        gap: 35px;
+     }
 }
-.imgLesnica {
-    height: 289px;
-    width: 337px;
-    bottom: 29px;
+
+@media (max-width: 1026px) {
+    .phoneIcon {
+    margin-right: 4px;
+    margin-left: 23px;
 }
+}
+
+@media (max-width: 1314px) {
+    .imgWhySps {
+        Width: 100%;
+    }
+    .whySps {
+    display: block;
+    }
 }
