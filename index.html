@@ -3,14 +3,13 @@
     <head>
         <meta charset="utf-8">
         <title>Sunset</title>
+        
         <link rel="stylesheet" href="package/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/style-menu.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Roboto&display=swap" rel="stylesheet"> 
         <meta name="viewport" content="width=device-width" />
-        
     </head>
     <body>
         <header class="site-header">
@@ -19,7 +18,7 @@
                 <span></span>
                 <span></span>
             </div>
-            <div >
+            <div>
                 <img class="logo" src="C:\Users\Ира\Desktop\проект\img\logo.png" id="home"> 
             </div>
             <div class="menu v-center">
@@ -272,7 +271,6 @@
                 </div>
                 </div>
             </div>
-            
         </section>
         <section class="sect6">
             <h1 class="sect3H1" id="current">What Our Tenants Have to Say</h1>
@@ -339,7 +337,6 @@
                         </div>
                     </div>
                 </div>
-                
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -436,38 +433,11 @@
                     <li><a href="#subscribe">Contact</a></li>
                 </ul>
             </div>
-
-
-        </footer>
-        <script>
-            function show_video(type)
-            {
-        
-                $('#overlay').fadeIn(400, // снaчaлa плaвнo пoкaзывaем темную пoдлoжку
-                    function(){ // пoсле выпoлнения предъидущей aнимaции	
-                        $('#' + type) 
-                        .css('display', 'block') // убирaем у мoдaльнoгo oкнa display: none;
-                        .animate({opacity: 1, top: '50%'}, 200); // плaвнo прибaвляем прoзрaчнoсть oднoвременнo сo съезжaнием вниз                 
-                    });
-                
-                
-            /* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
-            $('.modal_close, #overlay').click( function(){ // лoвим клик пo крестику или пoдлoжке
-                        
-                $('.modal_form')  
-                    .animate({opacity: 0, top: '45%'}, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
-            
-                function(){ // пoсле aнимaции
-                    $(this).css('display', 'none'); // делaем ему display: none;
-                    $('#overlay').fadeOut(400); // скрывaем пoдлoжку
-                }); 
-            });
-            }
-        </script>	
+        </footer>	
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
         <script src="package/swiper-bundle.min.js"></script>
-       
+        <script src="sunset.js"></script>
         
         <div id="v1" class="modal_form"><!-- Сaмo oкнo --> 
             <span class="modal_close">x</span> <!-- Кнoпкa зaкрыть --> 
@@ -484,47 +454,5 @@
         </div>
       <div id="overlay" class="overlay">
       </div>
-     
-
-     
-     <script>
-       const swiper = new Swiper('.swiper', {
-        slidesPerView: 1,
-        spaceBetween: 0,
-        loop:true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          768: {
-            slidesPerView: 1,
-            spaceBetween: 0,
-          },
-          1024: {
-            slidesPerView: 2,
-            spaceBetween: 15,
-
-          },
-          1280: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          }
-        }
-});
-    </script>
-       <script>
-        let menuBtn = document.querySelector('.menu-btn');
-        let menu = document.querySelector('.menu');
-            menuBtn.addEventListener('click', function(){
-	        menuBtn.classList.toggle('active');
-	        menu.classList.toggle('active');
-            })
-      </script>
-      
     </body>
 </html>
